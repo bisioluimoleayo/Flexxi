@@ -1,0 +1,485 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Flexxi.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
+        <meta name="email" content="" />
+        <meta name="website" content="" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Icons -->
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        <!-- Slider -->               
+        <link rel="stylesheet" href="css/tiny-slider.css"/> 
+        <!-- Main Css -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+    </head>
+
+    <body>
+        <!-- Loader -->
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader -->
+        
+        <!-- Navbar STart -->
+        <header id="topnav" class="defaultscroll sticky bg-white">
+            <div class="container-fluid mx-2 px-4">
+                <!-- Logo container-->
+                <a class="logo" href="index.html">
+                    <img src="images/logo.png" height="50" class="logo-light-mode text-light" alt=""><span>FLEXXI</span>
+                    <!-- <img src="images/logo-light.png" height="24" class="logo-dark-mode" alt=""> -->
+
+
+                </a>
+
+                <div class="login-button topnave-btn px-4">
+                    <a href="login.html" target="" class="btn btn-primary">Login</a>
+                </div><!--end login button-->
+
+                <div class="join-now-button topnave-btn">
+                    <a href="sign-up.html" target="" class="btn">Join Now</a>
+                </div><!--end login button-->
+
+                <div class="upload-button topnave-btn">
+                    <a href="#" target="" class="btn">Upload</a>
+                </div><!--end login button-->
+
+
+
+
+                <!-- End Logo container-->
+                <div class="menu-extras col-4">
+                    <div class="menu-item mx-5">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+        
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu">
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">
+                                    <input type="search" id="form1" class="form-control" placeholder="Search articles, templates, tutorials and images"
+                                aria-label="Search" />
+                            </a>
+                        </li>
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Products</a><span class="menu-arrow"></span>
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li><a href="#" class="sub-menu-item">Articles</a></li>
+                                        <li><a href="#" class="sub-menu-item">Templates</a></li>
+                                        <li><a href="#" class="sub-menu-item">Images</a></li>
+                                        <li><a href="#" class="sub-menu-item">Tutorials</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Explore</a><span class="menu-arrow"></span>
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li><a href="#" class="sub-menu-item">Articles</a></li>
+                                        <li><a href="#" class="sub-menu-item">Templates</a></li>
+                                        <li><a href="#" class="sub-menu-item">Images</a></li>
+                                        <li><a href="#" class="sub-menu-item">Tutorials</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu parent-parent-menu-item">
+                            <div class="buy-menu-btn d-none m-0">
+                                <a href="#" target="_blank" class="">Upload</a>
+                            </div><!--end login button-->
+                        </li>
+
+                        <li class="has-submenu parent-parent-menu-item">
+                            <div class="buy-menu-btn d-none m-0">
+                                <a href="sign-up.html" target="" class="">Join Now</a>
+                            </div><!--end login button-->
+                        </li>
+                        
+                        <li class="has-submenu parent-parent-menu-item">
+                            
+                    <div class="buy-menu-btn d-none m-0">
+                        <a href="login.html" target="_blank" class="btn btn-primary">Login</a>
+                    </div><!--end login button-->
+                        </li>
+
+
+                    </ul><!--end navigation menu-->
+
+
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
+        
+        <!-- Hero Start -->
+        <section class="bg-half bg-light d-table w-100 bg-blue">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-12">
+                        <div class="title-heading text-light">
+                            <h1 class="fw-bold mt-2 mb-3">All the Resources, <br> you need.</h1>
+                            <p class="para-desc">Access images, articles, tutorials,<br> and templates in minutes..</p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                        <img src="images/landing-page-character.png" class="img-fluid d-block mx-auto" alt="">
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div> <!--end container-->
+        </section><!--end section-->
+
+                <!-- FEATURES START -->
+                <section class="section">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="features-absolute">
+                                    <h1 class="text-light mb-4">Flexxi Products</h1>
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            
+                                            <div class="card features feature-clean explore-feature border-0 rounded-md shadow text-center pb-3">
+                                                <div class="position-relative">
+                                                    <img src="images/product1.png" class="card-img-top rounded-top" alt="...">
+                                                </div>
+                                                <!-- <div class="icons text-primary text-center">
+                                                    <img class="card-img-top" src="images/product1.png" alt="Card image cap" height="180" style="object-fit: cover;">
+                                                </div> -->
+                    
+                                                <div class="card-body p-0 content">
+                                                    <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Articles</a></h5>
+                                                    <p class="text-muted">Curated shared thoughts from around the world.</p>
+                    
+                                                    <a href="javascript:void(0)" class="text-primary">Discover All <i class="uil uil-angle-right-b align-middle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div><!--end col-->
+                                        
+                                        <div class="col-lg-3 col-md-6 col-12 mt-4 mt-md-0">
+                                            <div class="card features feature-clean explore-feature border-0 rounded-md shadow text-center pb-3">
+                                                <div class="position-relative text-left">
+                                                    <img src="images/product2.jpg" class="card-img-top rounded-top" alt="...">
+                                                </div>
+                                                <div class="card-body p-0 content">
+                                                    <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Images</a></h5>
+                                                    <p class="text-muted">The best photos by talented creators.</p>
+                    
+                                                    <a href="javascript:void(0)" class="text-primary">Discover ALl <i class="uil uil-angle-right-b align-middle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div><!--end col-->
+                                        
+                                        <div class="col-lg-3 col-md-6 col-12 mt-4 mt-lg-0 ">
+                                            <div class="card features feature-clean explore-feature border-0 rounded-md shadow text-center pb-3">
+                                                <div class="position-relative text-left">
+                                                    <img src="images/product3.png" class="card-img-top rounded-top" alt="...">
+                                                </div>
+                    
+                                                <div class="card-body p-0 content">
+                                                    <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Templates</a></h5>
+                                                    <p class="text-muted">Improve your workflow with designed templates.</p>
+                    
+                                                    <a href="javascript:void(0)" class="text-primary">Discover ALL <i class="uil uil-angle-right-b align-middle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div><!--end col-->
+                                        
+                                        <div class="col-lg-3 col-md-6 col-12 mt-4 mt-lg-0">
+                                            <div class="card features feature-clean explore-feature border-0 rounded-md shadow text-center pb-3">
+                                                <div class="position-relative text-left">
+                                                    <img src="images/product4.png" class="card-img-top rounded-top" alt="...">
+                                                </div>
+                    
+                                                <div class="card-body p-0 content">
+                                                    <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Tutorials</a></h5>
+                                                    <p class="text-muted">Video learning contents for you.</p>
+                    
+                                                    <a href="javascript:void(0)" class="text-primary">Discover All<i class="uil uil-angle-right-b align-middle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div><!--end col-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end row-->
+                    </div><!--end container-->
+
+                </section><!--end section-->
+
+
+
+                <section class="section overflow-hidden">
+                    <div class="container pt-4 mt-100 mt-60">
+                        <div class="row justify-content-center" id="counter">
+                            <div class="col-12 text-center">
+                                <div class="section-title">
+                                    <h2 class="title mb-0">A perfect fit for you</h2>
+                                    <p class="text-muted para-desc mx-auto mb-0">Get resources in minutes for personal and commercial use.</p>
+                                </div>
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div><!--end container-->
+
+                    <div class="container pb-5 pt-5 mb-md-5">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-4 col-12 mb-5">
+                                <div class="features text-center">
+                                    <div class="position-relative">
+                                        <img src="images/product5.png" class="card-img-top rounded-top" alt="..." style="object-fit: contain; width: 150px;">
+                                    </div>
+        
+                                    <div class="content mt-4">
+                                        <h5 class="fs-3">Search Flexxi</h5>
+                                        <p class="text-muted mb-0">Explore and choose from the best created and designed articles, images, templates and tutorials by Flexxi creators..</p>
+                                    </div>
+                                </div>
+                            </div><!--end col-->
+                            
+                            <div class="col-md-4 col-12 mt-5 mt-sm-0 mb-5">
+                                <div class="features text-center">
+                                    <div class="position-relative">
+                                        <img src="images/product6.png" class="card-img-top rounded-top" alt="..." style="object-fit: contain; width: 150px;">
+                                    </div>
+        
+                                    <div class="content mt-4">
+                                        <h5 class="fs-3">Make payment for the resource</h5>
+                                        <p class="text-muted mb-0">Easy payment for the selected resource of your choice through our token..</p>
+                                    </div>
+                                </div>
+                            </div><!--end col-->
+                            
+                            <div class="col-md-4 col-12 mt-5 mt-sm-0 mb-5">
+                                <div class="features text-center">
+                                    <div class="position-relative">
+                                        <img src="images/product7.png" class="card-img-top rounded-top" alt="..." style="object-fit: contain; width: 150px;">
+                                    </div>
+        
+                                    <div class="content mt-4">
+                                        <h5 class="fs-3">Lifetime Access</h5>
+                                        <p class="text-muted mb-0">Get the resource in your email or downloaded directly..</p>
+                                    </div>
+                                </div>
+                            </div><!--end col-->
+                        </div><!--end row-->
+                        
+                    </div><!--end container-->
+        
+                    <div class="container pb-5 mb-md-5 mt-100 mt-60">
+                        <h1 class="text-center">A World of Creativity</h1>
+                        <p class="text-center mb-5">Here at Flexxi</p>
+                        <div class="row align-items-center mb-5 mt-5">
+                            <div class="col-lg-7">
+                                <div class="position-relative">
+                                    <img src="images/picture7.png" class="card-img-top rounded-top" alt="..." width="45%">
+                                </div>
+                            </div><!--end col-->
+        
+                            <div class="col-lg-5 mt-4 pt-2 mt-lg-0 pt-lg-0">
+                                <div class="section-title ms-lg-4">
+                                    <h1 class="title mb-3">Stunning images at a fee for you</h1>
+                              </div>
+                            </div><!--end col-->
+                        </div><!--end row-->
+                        <div class="row align-items-center flex-row-reverse mb-5">
+                            <div class="col-lg-7">
+                                <div class="position-relative">
+                                    <img src="images/picture8.png" class="card-img-top rounded-top" alt="..." width="45%">
+                                </div>
+                            </div><!--end col-->
+        
+                            <div class="col-lg-5 mt-4 pt-2 mt-lg-0 pt-lg-0">
+                                <div class="section-title ms-lg-4">
+                                    <h1 class="title mb-3">A place to read </h1>
+                              </div>
+                            </div><!--end col-->
+                        </div><!--end row-->
+                        <div class="row align-items-center mb-5">
+                            <div class="col-lg-7">
+                                <div class="position-relative">
+                                    <img src="images/picture9.png" class="card-img-top rounded-top" alt="..." width="45%">
+                                </div>
+                            </div><!--end col-->
+        
+                            <div class="col-lg-5 mt-4 pt-2 mt-lg-0 pt-lg-0">
+                                <div class="section-title ms-lg-4">
+                                    <h1 class="title mb-3">Optimize your workfow with templates to guide you</h1>
+                              </div>
+                            </div><!--end col-->
+                        </div><!--end row-->
+                        <div class="row align-items-center flex-row-reverse mb-5">
+                            <div class="col-lg-7">
+                                <div class="position-relative">
+                                    <img src="images/picture10.png" class="card-img-top rounded-top" alt="..." width="45%">
+                                </div>
+                            </div><!--end col-->
+        
+                            <div class="col-lg-5 mt-4 pt-2 mt-lg-0 pt-lg-0">
+                                <div class="section-title ms-lg-4">
+                                    <h1 class="title mb-3">Visual-Knowledge Well Delivered</h1>
+                              </div>
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div><!--end container-->
+        
+                    <div class="container pb-5 mb-md-5 mt-100 mt-60">
+                        <!-- <div class=" mt-100">
+                            <h5 class="col-8 text-center">Resources made by talented creators</h5>
+                            <div>
+                                <a name="" id="" class="btn border btn-transparent" href="#" role="button">Upload</a>
+                                <a name="" id="" class="btn btn-primary" href="sign-up.html" role="button">Join Now</a>
+                            </div>
+                        </div> -->
+                        <div class="mb-100">
+                            <img src="images/Rounded Pix.svg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} position-relative" alt="">
+                        </div>
+
+
+                    </div>
+                    
+                    <div class="container pb-5 mb-md-5 mt-100 mt-60">
+                        <h1 class="text-bold">Monetize your content</h1>
+                        <p>Get access to monetize your created work by Uploading your resource as a Flexxi Creator.</p>
+                        <div class="embed-responsive embed-responsive-21by9">
+                            <img class="embed-responsive-item rounded" src="images/video.png" width="100%" height="300px" style="object-fit: cover;"/>
+                          </div>
+                    </div>
+
+                </section>
+
+
+
+
+        <!-- Feature Start -->
+        <section class="section">
+            <div class="container">
+                <div class="row">
+ 
+                </div><!--end row-->
+            </div><!--end container-->
+            </section>
+        <!-- Feature Start -->
+        <section class="section">
+            <div class="container">
+                <div class="row">
+ 
+                </div><!--end row-->
+            </div><!--end container-->
+            </section>
+
+        <!-- Footer Start -->
+        <footer class="footer footer-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                        <a href="#" class="logo-footer text-light">
+                            <img src="images/logo.png" height="40" alt=""><span> Flexxi </span>
+                        </a>
+                        <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                             Quam dolor voluptate odit. Temporibus ullam itaque ab, accusantium,
+                              illo ad id quibusdam cumque minima doloribus repellendus. Suscipit dolore eaque quis quo.</p>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="text-light footer-head">Products</h5>
+                        <ul class="list-unstyled footer-list mt-4">
+                            <li><a href="#" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Aticles</a></li>
+                            <li><a href="#" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Templtes</a></li>
+                            <li><a href="#" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Images</a></li>
+                            <li><a href="#" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Templates</a></li>
+                            <li><a href="#l" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Tutorial</a></li>
+                        </ul>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="text-light footer-head">Company</h5>
+                        <ul class="list-unstyled footer-list mt-4">
+                            <li><a href="page-terms.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> About us</a></li>
+                            <li><a href="page-privacy.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Guides & Help</a></li>
+                            <li><a href="documentation.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Career</a></li>
+                            <li><a href="changelog.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Terms & Policy</a></li>
+                        </ul>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="text-light footer-head">Support</h5>
+                        <ul class="list-unstyled footer-list mt-4">
+                            <li><a href="page-terms.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Contact us</a></li>
+                            <li><a href="page-privacy.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> FAQ</a></li>
+                            <li><a href="documentation.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> FAQ</a></li>
+                        </ul>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        
+        <footer class="footer footer-bar footer-bg">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-start">
+                            <p class="mb-0">Copyright© <script>document.write(new Date().getFullYear())</script> Flexxi <i class="mdi mdi-heart text-danger"></i> by <a href="https://shreethemes.in/" target="_blank" class="text-reset">All right reserved</a>.</p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <ul class="list-unstyled text-sm-end mb-0">
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social text-light"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social text-light"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social text-light"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social text-light"></i></a></li>
+                        </ul>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+        <!-- Back to top -->
+
+        
+
+        <!-- javascript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- SLIDER -->
+        <script src="js/tiny-slider.js "></script>
+        <!-- Icons -->
+        <script src="js/feather.min.js"></script>
+        <!-- Main Js -->
+        <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+    </body>
+</html>
